@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bologna: Tra Memoria, Letteratura e Arte Liberty</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- Sezione Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bologna: Tra Memoria, Letteratura e Arte Liberty</h1>
+      <p>Scopri un itinerario unico tra storia, poesia e architettura.</p>
+      <a href="#chi-siamo" class="cta-button">Scopri di più</a>
+    </div>
+  </section>
+
+  <!-- Layer rosso -->
+  <div class="layer-rosso"></div>
+
+  <!-- Sezione Chi siamo -->
+  <section class="chi-siamo" id="chi-siamo">
+    <div class="container">
+      <h2>Chi siamo</h2>
+      <p>
+        Siamo un team appassionato di storia, letteratura e arte, dedicato a far scoprire le bellezze di Bologna attraverso itinerari unici e coinvolgenti.
+      </p>
+    </div>
+  </section>
+
+  <!-- Layer rosso -->
+  <div class="layer-rosso"></div>
+
+  <!-- Sezione I nostri lavori -->
+  <section class="lavori" id="lavori">
+    <div class="container">
+      <h2>I nostri lavori</h2>
+      <p class="sottotitolo-lavori">Scopri il nostro itinerario di Bologna, suddiviso in tre giorni ricchi di storia, cultura e arte.</p>
+
+      <!-- Giorno 1 -->
+      <div class="giorno">
+        <h3>Giorno 1 - Alla Scoperta dell’Università bolognese</h3>
+        <div class="giorno-content">
+          <div class="giorno-text">
+            <p>
+              Oggi ci immergiamo nella storia dell’<strong>Università di Bologna</strong>, la più antica del mondo occidentale, e nel suo legame con <strong>Giovanni Pascoli</strong>, uno dei più grandi poeti italiani.
+            </p>
+            <h4>Mattina</h4>
+            <p>
+              Iniziamo con una <strong>visita guidata all’Università di Bologna</strong>, esplorando i suoi cortili storici, l’<strong>Archiginnasio</strong> e l’<strong>Aula Magna</strong>. Scopriremo come Pascoli insegnò qui e come l’ateneo ha influenzato la sua poesia.
+            </p>
+            <p>
+              <strong>Tappa speciale</strong>: Una sosta nel cortile di <strong>Palazzo Poggi</strong>, dove Pascoli trascorse parte della sua vita accademica.
+            </p>
+            <h4>Pranzo</h4>
+            <p>
+              Gustiamo un <strong>pranzo tipico</strong> in un ristorante tradizionale, con piatti come le <strong>tagliatelle al ragù</strong> e i <strong>tortellini in brodo</strong>, accompagnati da un bicchiere di <strong>Pignoletto</strong>, il vino bianco locale.
+            </p>
+            <h4>Pomeriggio</h4>
+            <p>
+              Visiteremo <strong>Casa Carducci</strong>, la casa-museo del poeta Giosuè Carducci, amico e collega di Pascoli. Concludiamo con un <strong>laboratorio di scrittura poetica</strong>, ispirato alle opere di Pascoli, per immergerci nell’atmosfera creativa che ha caratterizzato la sua vita.
+            </p>
+            <p>
+              <strong>Laboratorio</strong>: Scriveremo una breve poesia ispirata ai temi pascoliani, come la natura, la memoria e l’infanzia.
+            </p>
+            <h4>Sera</h4>
+            <p>
+              <strong>Cena immersiva nei paesaggi pascoliani</strong>: Per concludere la giornata, ci immergeremo in un’esperienza unica che ricrea l’atmosfera dei paesaggi descritti da Pascoli. La cena si svolgerà in un <strong>ristorante con giardino</strong> o in una location all’aperto, decorata con luci soffuse, piante e fiori che richiamano i paesaggi rurali e naturali delle sue poesie.
+            </p>
+          </div>
+          <div class="giorno-image">
+            <img src="giorno1.jpg" alt="Università di Bologna">
+          </div>
+          <div id="map-giorno1" class="map"></div>
+        </div>
+      </div>
+
+      <!-- Giorno 2 -->
+      <div class="giorno">
+        <h3>Giorno 2 - Bologna e la Seconda Guerra Mondiale</h3>
+        <div class="giorno-content">
+          <div class="giorno-text">
+            <p>
+              Oggi esploriamo i luoghi che raccontano la storia di Bologna durante la <strong>Seconda Guerra Mondiale</strong>, tra Resistenza, memoria e rinascita.
+            </p>
+            <h4>Mattina</h4>
+            <p>
+              Visita al <strong>Museo Memoriale della Libertà</strong>, un luogo ricco di documenti, reperti e testimonianze della guerra. Ascolteremo storie di coraggio e sacrificio, con una guida che ci racconterà gli eventi che hanno segnato la città. Successivamente ci recheremo al <strong>Memoriale delle vittime della strage di Marzabotto</strong>, per ricordare una delle pagine più tragiche della guerra.
+            </p>
+            <h4>Pranzo</h4>
+            <p>
+              Pranzo leggero in un <strong>bistrot locale</strong>, con un <strong>menu storico</strong> che ripropone piatti tipici dell’epoca, per un’esperienza culinaria che ci riporta indietro nel tempo.
+            </p>
+            <h4>Pomeriggio</h4>
+            <p>
+              Visita al <strong>Cimitero Monumentale della Certosa</strong>, un luogo di memoria e arte, dove riposano partigiani e vittime della guerra. Concludiamo con una visita al <strong>Memoriale della Stazione</strong>, dedicato alle vittime della strage del 2 agosto 1980, un momento di silenzio e riflessione.
+            </p>
+            <h4>Sera</h4>
+            <p>
+              Cena in un ristorante con <strong>vista panoramica</strong> sulla città, per ammirare la bellezza e l'eleganza della città.
+            </p>
+          </div>
+          <div class="giorno-image">
+            <img src="giorno2.jpg" alt="Museo Memoriale della Libertà">
+          </div>
+          <div id="map-giorno2" class="map"></div>
+        </div>
+      </div>
+
+      <!-- Giorno 3 -->
+      <div class="giorno">
+        <h3>Giorno 3 - Immersione nell’Art Nouveau</h3>
+        <div class="giorno-content">
+          <div class="giorno-text">
+            <p>
+              Oggi scopriamo l’eleganza dell’<strong>Art Nouveau</strong> a Bologna, tra palazzi storici, dettagli architettonici e un tocco di creatività.
+            </p>
+            <h4>Mattina</h4>
+            <p>
+              Visita a <strong>Casa Saraceni</strong>, un edificio storico con elementi Liberty, dove scopriremo i dettagli architettonici che caratterizzano questo stile. Partecipiamo a un <strong>workshop di decorazione Art Nouveau</strong>, dove creeremo il nostro piccolo oggetto decorativo ispirato a questo stile.
+            </p>
+            <p>
+              <strong>Laboratorio</strong>: Realizzeremo un segnalibro o una cartolina decorata con motivi Liberty.
+            </p>
+            <h4>Pranzo</h4>
+            <p>
+              Pranzo in un <strong>caffè storico</strong>, con una degustazione di vini locali abbinati a piatti tipici. Una pausa golosa per ricaricare le energie.
+            </p>
+            <h4>Pomeriggio</h4>
+            <p>
+              Passeggiata nel <strong>Quartiere Santo Stefano</strong>, alla scoperta degli edifici Art Nouveau nascosti tra le vie del centro. Concludiamo con una visita alla <strong>Basilica di Santo Stefano</strong>, un complesso architettonico unico.
+            </p>
+            <p>
+              <strong>Tappa speciale</strong>: Una sosta in <strong>Via Farini</strong>, dove ammireremo alcuni dei più bei palazzi Liberty della città.
+            </p>
+            <h4>Sera</h4>
+            <p>
+              Cena di arrivederci in un ristorante con <strong>spettacolo di burlesque o cabaret</strong>, in stile Belle Époque, per immergerci completamente nell’atmosfera Art Nouveau.
+            </p>
+          </div>
+          <div class="giorno-image">
+            <img src="giorno3.jpg" alt="Casa Saraceni">
+          </div>
+          <div id="map-giorno3" class="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layer rosso -->
+  <div class="layer-rosso"></div>
+
+<!-- Sezione Contatti -->
+<section class="contatti" id="contatti">
+  <div class="container">
+    <h2>Contatti</h2>
+    <p>Restiamo in contatto! Seguici sui social o scrivici una email.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+    <div class="email">
+      <p>Email: <a href="mailto:info@bolognaturismo.it">info@bolognaturismo.it</a></p>
+    </div>
+  </div>
+</section>
+
+  <!-- Aggiungi Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
